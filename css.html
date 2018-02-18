@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Passerelle Numérique</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+
+<body>
+	<header>
+		<h1><a href="index.html"><img class="logo" src="image/logo.png" alt="logo_passerelle_numerique"></a></h1>
+		<div class="main">
+				<nav id="menu" class="nav">         
+          <ul>
+            <li>
+              <a href="html.html">
+                <span class="icon"> 
+                  <img class="icone_html" src="image/HTML5_Logo_512.png" alt="icone_html">
+                </span>
+                <span>HTML</span>
+              </a>
+            </li>
+            <li>
+              <a href="css.html">
+                <span class="icon">
+                  <img class="icone_css" src="image/css3-logo.png" alt="icone_css">
+                </span>
+                <span>CSS</span>
+              </a>
+            </li>
+            <li>
+              <a href="Javascript.html">
+                <span class="icon">
+                  <img class="icone_js" src="image/skl-icon-3.png" alt="icone_javascript">
+                </span>
+                <span>Javascript</span>
+              </a>
+            </li>
+            <li>
+              <a href="webdesign.html">
+                <span class="icon">
+                  <img class="icone_design" src="image/webdesign.png" alt="icone_design">
+                </span>
+                <span>Design</span>
+              </a>
+            </li>
+            <li>
+              <a href="framework.html">
+                <span class="icon">
+                  <img class="icone_framework" src="image/framework-logo-2.png" alt="icone_framework">
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+			</div>
+	</header>
+
+	 <section class="le__CSS">
+      <article id="intro__CSS">
+        <h2>Qu'est-ce que le CSS ?</h2>
+        <div class="intro__CSS--center">
+          <img src="image/CSS_3.svg" alt="Qu'est-ce que le CSS ?">
+          <p>
+            <span class="strong">CSS</span> (<span class="italique souligne"><span class="strong">C</span>ascading</span>
+            <span class="italique souligne"><span class="strong">S</span>tyle</span>
+            <span class="italique souligne"><span class="strong">S</span>heets</span>) est un langage qui définit la façon dont les documents sont présentés aux utilisateurs.
+            Un document est habituellement un fichier texte qui est structuré en utilisant un langage de balises tel que <a class="html" title="HTML" href="#">HTML</a>.
+            Les navigateurs web appliquent des règles <span class="strong">CSS</span> à un document afin que ceux-ci soient affichés correctement.
+            Une règle <span class="strong">CSS</span> est une liste de propriétés associées à un sélecteur. Une liste de règles de <span class="strong">CSS</span> est contenue dans une feuille de style qui définit la mise en forme d'une page.
+            La notion de "<span class="italique souligne">cascade</span>" fait référence aux règles de priorité qui existent entre les différents sélecteur.
+            C'est un aspect très important car on peut "facilement" avoir des milliers de règles <span class="strong">CSS</span> lorsqu'on gère un site complexe.
+          </p>
+        </div>
+      </article>
+      <article id="fonctionnement__CSS">
+        <h3>Le fonctionnement de CSS</h3>
+        <p> Lorsqu'un navigateur affiche un document, il doit combiner le contenu du document
+            avec les règles de mise en forme. Pour cela, il traite le document en <span class="souligne">deux étapes</span> :
+            Le navigateur convertit le contenu <a class="html" href="html.html">HTML</a> et le <span class="strong">CSS</span> dans le <span class="strong italique">DOM</span>
+            (<span class="strong italique souligne">D</span><span class="italique souligne">ocument</span>
+            <span class="strong italique souligne">O</span><span class="italique souligne">bject</span>
+            <span class="strong italique souligne">M</span><span class="italique souligne">odel</span> ou « Modèle objet du document »).
+            Le <span class="strong italique">DOM</span> représente le document dans la mémoire de l'ordinateur.
+            Pour cela il combine le contenu et la mise en forme (<span class="italique souligne">le style</span>).
+            Le navigateur affiche le contenu du <span class="strong italique">DOM</span>.
+        </p>
+        <img src="image/schema_MDN-comment-css-marche.png" alt="MDN Schema">
+      </article>
+      <article id="les-selecteurs__CSS">
+        <h3>Les Sélecteurs</h3>
+        <ul>
+          <li><p class="list-Titles strong">Les selecteurs simples</p>
+            <ul>
+              <li>Les sélecteurs de type <span class="css">nomelement</span></li>
+              <li>Les sélecteurs de classe <span class="css">.classe</span></li>
+              <li>Les sélecteurs d'identifiant <span class="css">#id</span></li>
+              <li>Les sélecteurs universels <span class="css">*</span></li>
+              <li>Les sélecteurs d'attribut <span class="css">[attr=valeur]</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les combinateurs</p>
+            <ul>
+              <li>Les sélecteurs de voisins directs <span class="css">A + B</span></li>
+              <li>Les sélecteurs de voisins <span class="css">A ~ B</span></li>
+              <li>Les sélecteurs d'éléments fils <span class="css">A > B</span></li>
+              <li>Les sélecteurs d'éléments descendants <span class="css">A B</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les pseudo-elements</p>
+            <ul>
+              <li><span class="css">::after</span></li>
+              <li><span class="css">::before</span></li>
+              <li><span class="css">::first-letter</span></li>
+              <li><span class="css">::first-line</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les pseudo-classes standard</p>
+            <ul>
+              <li><span class="css">:active</span></li>
+              <li><span class="css">:checked</span></li>
+              <li><span class="css">:first</span></li>
+              <li><span class="css">:first-child</span></li>
+              <li><span class="css">:first-of-type</span></li>
+              <li><span class="css">:focus</span></li>
+              <li><span class="css">:hover</span></li>
+              <li><span class="css">:last-child</span></li>
+              <li><span class="css">:last-of-type</span></li>
+              <li><span class="css">:not()</span></li>
+              <li><span class="css">:nth-child()</span></li>
+              <li><span class="css">:nth-last-child()</span></li>
+              <li><span class="css">:nth-last-of-type()</span></li>
+              <li><span class="css">:nth-of-type()</span></li>
+              <li><span class="css">:only-child</span></li>
+              <li><span class="css">:only-of-type</span></li>
+              <li><span class="css">:visited</span></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <article id="les-proprietes__CSS">
+        <h3>Les Propriétés CSS</h3>
+        <article class="les-proprietes__CSS--details">
+          <h4>Les propriétés de police CSS</h4>
+          <p>
+            Les propriétés de police CSS contrôlent tous les aspects de la représentation graphique de votre texte.
+            De l'épaisseur de votre police (font-weight) au type de police (font-family) de votre choix.
+            Voici toutes les propriétés de police à votre disposition:
+          </p>
+          <ul>
+            <li>font</li>
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>font-style</li>
+            <li>font-weight</li>
+            <li>font-variant</li>
+          </ul>
+        </article>
+        <article class="les-proprietes__CSS--details">
+          <h4>Les propriétés de texte CSS</h4>
+          <p>
+            Les propriétés de texte CSS contrôlent l'espacement, l'alignement, la décoration et d'autres aspects divers du texte.
+            Voici une liste de toutes les propriétés du texte CSS.
+          </p>
+          <ul>
+            <li>letter-spacing</li>
+            <li>word-spacing</li>
+            <li>text-decoration</li>
+            <li>vertical-align</li>
+            <li>text-transform</li>
+            <li>text-align</li>
+            <li>text-indent</li>
+            <li>line-height</li>
+          </ul>
+        </article>
+        <article class="les-proprietes__CSS--details">
+          <h4>Les propriétés de la boîte CSS</h4>
+          <p>
+            Les propriétés de la boîte CSS sont utilisées pour définir l'espacement
+            dans et autour des éléments HTML, leurs bordures et d'autres aspects de positionnement.
+            Border, Margin et Padding ont chacun quatre propriétés: haut, droite, bas et gauche.
+          </p>
+          <ul>
+            <li>margin</li>
+            <li>padding</li>
+            <li>border</li>
+            <li>border-width</li>
+            <li>border-color</li>
+            <li>width</li>
+            <li>height</li>
+            <li>float</li>
+            <li>clear</li>
+          </ul>
+        </article>
+        <article class="les-proprietes__CSS--details">
+          <h4>La propriété CSS Color</h4>
+          <p>
+            La propriété CSS color définit la couleur du texte à l'intérieur de l'élément HTML spécifié.
+            Utilisez des classes ou des identifiants pour avoir plusieurs couleurs pour un type d'élément HTML.
+          </p>
+          <ul>
+            <li>Color</li>
+          </ul>
+        </article>
+        <article class="les-proprietes__CSS--details">
+          <h4>Les propriétés d'arrière-plan CSS</h4>
+          <p>
+            Les propriétés d'arrière-plan CSS contrôlent des choses comme si l'arrière-plan est une couleur unique ou peut-être une image.
+            S'il s'agit d'une image, vous pouvez définir la position de l'image et lui indiquer si vous souhaitez ou non que l'image soit répétée de gauche à droite et / ou de haut en bas.
+          </p>
+          <ul>
+            <li>background</li>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-repeat</li>
+            <li>background-attachment</li>
+            <li>background-position</li>
+          </ul>
+        </article>
+    </section>
+    <section class="flex">
+      <h3>FlexBox</h3>
+      <article>
+        <p>FlexBox (pour Flexible Box) est un mode de mise en page prévoyant
+        une disposition des éléments d’une page de telle sorte que ces éléments
+        possèdent un comportement prévisible lorsqu’ils doivent s’accommoder de
+         différentes tailles d’écrans/appareils.(responsive design) </p>
+        <p>L’aspect principal d'une mise en page flex est la capacité à modifier
+         la largeur et/ou la hauteur des éléments pour remplir au mieux l'espace
+         disponible sur n'importe quel appareil; Un conteneur flex élargit les éléments
+         pour remplir l'espace libre ou les rétrécir pour éviter les débordements.</p>
+        <ul>
+          <li>display:flex <p>Cette valeur genere un container flex, de niveau block a l'interieur de l'element</p></li>
+          <li>display:inline-flex <p> Cette valeur genere un container flex, de niveau inline a l'interieur de l'element</p></li>
+        </ul>
+      </article>
+      <article>
+      <h4>flex direction</h4>
+      <p>La propriété flex-direction établit l'axe principal.</p>
+       <ul>
+         <li>row <p>(valeur par défaut): de gauche à droite si la lecture se fait dans ce sens, de droite à gauche dans le cas inverse.</p></li>
+         <li>row-reverse <p>inverse le sens</p></li>
+         <li>column <p>comme row mais du haut vers le bas</p></li>
+         <li>column-reverse <p> comme row-reverse mais du bas vers le haut</p>
+       </ul>
+      <article/>
+      <article class="flex__justify">
+        <h4>justify content</h4>
+        <p>La propriété justify-content définit l'alignement le long de l'axe principal. Elle permet de distribuer l'espace excédentaire lorsque tous
+          les items flex sur une ligne sont inflexibles ou lorsqu'ils ont atteint leur taille maximale. Elle contrôle aussi l'alignement des items lorsqu'ils débordent.</p>
+        <ul>
+          <li>flex-start: <p>(par défaut) : les items sont regroupés en début de ligne</p></li>
+          <li>flex-end: <p>les items sont regroupés en fin de ligne</p></li>
+          <li>center: <p>les items sont centrés le long de la ligne</p></li>
+          <li>space-between: <p>les items sont répartis sur la ligne; le premier est collé du côté start, le dernier du côté end.</p></li>
+          <li>space-around:<p> les items sont répartis sur la ligne avec un espacement égal autour de chacun.</p></li>
+        </ul>
+        <div class= "flex__justify--centre">
+        <img src ="image/justify.png"alt="justify">
+        </div>
+      </article>
+      
+    </section>
+    <section class="bem">
+      <article class="bem__flex">
+        <h3>Le BEM</h3>
+        <p>BEM apporte une solution à un problème majeur en informatique : le nommage.
+          Il n'y a rien de plus compliqué en informatique que de nommer un objet : besoin
+          d'être explicite, ne doit pas être trop générique, ni trop compliqué,</p>
+        <p>  BEM est le sigle pour Block, Element, Modifier.</p>
+        <div class="bem__flex--centre">
+        <img src ="image/bem.jpg"alt="bem">
+        </div>
+      </article>
+
+     </section>
+
+
+
+
+
+
+	<footer>
+      <div class="footer__Email">
+        <div class="footer__Row--center">
+          <a href="mailto:passnum@centre-marseille.fr">passnum@centre-marseille.fr</a>
+        </div>
+      </div>
+      <div class="footerLogo footer__Row--center">
+        <a class="footerLogo__link" href="https://www.centrale-marseille.fr/"><img src="image/ecole-centrale.png" alt="logo_ecolecentrale"></a>
+      </div>
+      <div class="footer__socialNetwork footer__Column--center">
+        <div class="footer__socialNetwork--center">
+          <a href="https://www.facebook.com/CentraleMarseille/"><img src="image/facebook.png" alt="logo_facebook"></a>
+              <a href="https://twitter.com/PassNum"><img src="image/twitter.png" alt="logo_twitter"></a>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

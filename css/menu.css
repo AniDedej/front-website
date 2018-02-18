@@ -1,0 +1,116 @@
+/* Propriété de la liste de la nav */
+
+.nav ul {
+	max-width: 1240px;
+	margin-top: -4%;
+	padding: 0;
+	list-style: none;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.nav li span {
+	display: block;
+}
+
+/* Sert à faire une animation progressif de la nav */
+
+.nav a {
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	-webkit-transition: color .5s, background .5s, height .5s;
+	-moz-transition: color .5s, background .5s, height .5s;
+	-o-transition: color .5s, background .5s, height .5s;
+	-ms-transition: color .5s, background .5s, height .5s;
+	transition: color .5s, background .5s, height .5s;
+}
+
+/* Couleur de la nav pour chaque partie */
+
+.nav li:nth-child(6n+1) {
+	background: rgba(208, 101, 3, 1);
+}
+
+.nav li:nth-child(6n+2) {
+	background: rgba(22, 145, 190, 0.8);
+}
+
+.nav li:nth-child(6n+3) {
+	background: rgba(233, 147, 26, 0.6);
+}
+
+.nav li:nth-child(6n+4) {
+	background: rgba(22, 107, 162, 0.4);
+}
+
+.nav li:nth-child(6n+5) {
+	background: rgba(27, 54, 71, 0.2);
+}
+
+/* Pour mettre en dégradé
+
+
+.nav li:nth-child(6n+1) {
+	background-image: linear-gradient(180deg, white, rgba(208, 101, 3, 1));
+}
+
+.nav li:nth-child(6n+2) {
+	background-image: linear-gradient(180deg, white, rgba(233, 147, 26, 1));
+}
+
+.nav li:nth-child(6n+3) {
+	background-image: linear-gradient(180deg, white, rgba(22, 145, 190, 1));
+}
+
+.nav li:nth-child(6n+4) {
+	background-image: linear-gradient(180deg, white, rgba(22, 107, 162, 1));
+}
+
+.nav li:nth-child(6n+5) {
+	background-image: linear-gradient(180deg, white, rgba(27, 54, 71, 1));
+}
+
+.nav li:nth-child(6n+6) {
+	background-image: linear-gradient(180deg, white, rgba(21, 40, 54, 1));
+} */
+
+/* Pour ecran superieur à 800px */
+@media (min-width: 50em) {
+
+	/* Transforme la liste en horizontale */
+	.nav li {
+		float: left;
+		width: 16.6%;
+		text-align: center;
+	}
+
+	.nav a {
+		display: block;
+		width: auto;
+	}
+
+	/* padding des icônes de la nav */
+
+	.icon {
+		padding-top: 1.4em;
+	}
+
+	/* Longueur de la nav */
+
+	.nav a {
+		height: 8em;
+	}
+
+	/* Déclanche une petite animation lorsque la souris passe sur la nav */
+
+	.nav a:hover {
+		height: 9em;
+	}	
+
+	
+	
+}
+
+
+
